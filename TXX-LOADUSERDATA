@@ -1,4 +1,4 @@
 return {
+["0vos-sieds-6s62d"] = game:GetService("Players").LocalPlayer.UserId,
 ["Immortal"] = 4342692783,
-["Sexty"] = 3829922923,
 }
