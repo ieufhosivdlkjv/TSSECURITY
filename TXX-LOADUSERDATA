@@ -1,7 +1,6 @@
 return {
-["lo9a2-7sifo-4qgfe"] = game:GetService("Players").LocalPlayer.UserId,
+["4xjza-9zalo-s4hjx"] = game:GetService("Players").LocalPlayer.UserId,
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
 ["Immortal"] = 7305183830,
-["Gg"] = nil,
 }
