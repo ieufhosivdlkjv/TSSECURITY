@@ -1,6 +1,6 @@
 return {
 ["Settings"] = {
-["Whitelist"] = true 
+["Whitelist"] = false
 },
 ["4xjza-9zalo-s4hjx"] = game:GetService("Players").LocalPlayer.UserId,
 ["Blink129"] = 113046944,
