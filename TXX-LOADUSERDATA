@@ -1,7 +1,7 @@
 return {
 ["Settings"] = {
-["KillSwitch"] = true
-["Whitelist"] = true
+["KillSwitch"] = true,
+["Whitelist"] = true,
 },
 ["4xjza-9zalo-s4hjx"] = game:GetService("Players").LocalPlayer.UserId,
 ["Blink129"] = 113046944,
