@@ -1,6 +1,6 @@
 return {
 ["Settings"] = {
-["KillSwitch"] = false,
+["KillSwitch"] = true,
 ["Whitelist"] = false,
 },
 ["Blink129"] = 113046944,
