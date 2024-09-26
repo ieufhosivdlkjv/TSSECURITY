@@ -53,6 +53,7 @@ commandz = {
     end
 }
 
+
 function initi()
 for l,v in pairs(Players:GetPlayers()) do
     if conn[table.find(conn,v.Name)] == v.Name then
@@ -68,11 +69,11 @@ for l,v in pairs(Players:GetPlayers()) do
 end
 end
 
+Players.PlayerAdded:Connect(function()
 if lpname == conn[table.find(conn,lpname)] then
-    warn("Premium Found Bypassing Commands Giving Shield")
 else
     if lpname ~= conn[table.find(conn,lpname)] then
-        warn("Vulnerable to commands")
         initi()
     end
 end
+end)
