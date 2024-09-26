@@ -35,7 +35,9 @@ commandz = {
     [":spameff"] = function(Value)
     getgenv().spameff = Value
     while getgenv().spameff == true do task.wait(.2)
-
+    s = require(game:GetService("ReplicatedStorage").devv.client.Objects.v3item.bin.Fists.modules.controller)
+    x = getupvalues(getupvalues(getupvalues(s.meleeFunctions)[2])[5])[1].data
+    pcall(x.confetiiiiiiiiiiiii)
     end
     end,
     [":fling"] = function(flingpower)
