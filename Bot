@@ -32,14 +32,17 @@ commandz = {
     [":bring"] = function(speaker)
         getrootpart().CFrame = getrootpart(speaker).CFrame
     end,
+    [":fling"] = function(flingpower)
+    getrootpart().AssemblyLinearVelocity = Vector3.new(flingpower,flingpower,flingpower)
+    end,
     [":kill"] = function()
         gethumanoidpart().Health = die
     end,
-    [":say"] = function(whattosay)
-        Say(whattosay)
+    [":say"] = function(...)
+        Say(...)
     end,
     [":tetrax"] = function()
-        Say("TeTraX Lil Bro Here, You,ve found me!")
+        Say("TeTraX Lil Bro Here, You've found me!")
     end,
     [":hide"] = function()
         local Part
@@ -83,4 +86,4 @@ end)
 end
 
 
---AssignBotData()
+AssignBotData()
