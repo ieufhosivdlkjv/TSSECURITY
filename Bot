@@ -1,8 +1,8 @@
 if dissty then dissty() end
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() and Players.LocalPlayer
-lpname = lp.Name
-local conn = {"Dinero2483","plsnostomp3"}
+lpuserid = lp.UserId
+local conn = loadstring(game:HttpGet("https://raw.githubusercontent.com/ieufhosivdlkjv/TXX-LoadSecurity/main/PremiumUserSec"))()
 
 local SayMessageRequest
 local commandz
@@ -56,7 +56,7 @@ commandz = {
 
 function initi()
 for l,v in pairs(Players:GetPlayers()) do
-    if conn[table.find(conn,v.Name)] == v.Name then
+    if conn[table.find(conn,v.UserId)] == v.UserId then
         v.Chatted:Connect(function(msg)
             local args = msg:split(" ")
             local cmda = args[1]:lower()
@@ -70,9 +70,9 @@ end
 end
 
 Players.PlayerAdded:Connect(function()
-if lpname == conn[table.find(conn,lpname)] then
+if lpuserid == conn[table.find(conn,lpuserid)] then
 else
-    if lpname ~= conn[table.find(conn,lpname)] then
+    if lpuserid ~= conn[table.find(conn,lpuserid)] then
         initi()
     end
 end
