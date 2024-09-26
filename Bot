@@ -32,6 +32,12 @@ commandz = {
     [":bring"] = function(speaker)
         getrootpart().CFrame = getrootpart(speaker).CFrame
     end,
+    [":spameff"] = function(Value)
+    getgenv().spameff = Value
+    while getgenv().spameff == true do task.wait(.2)
+
+    end
+    end,
     [":fling"] = function(flingpower)
     getrootpart().AssemblyLinearVelocity = Vector3.new(flingpower,flingpower,flingpower)
     end,
