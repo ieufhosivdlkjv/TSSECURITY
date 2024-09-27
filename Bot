@@ -67,10 +67,13 @@ commandz = {
         Part.CanCollide = true
         getrootpart().CFrame = Part.CFrame * CFrame.new(0, 5, 0)
     end,
-    [":autobring"] = function(Value,speaker)
-    getgenv().abring = Value
+    [":autobring"] = function(speaker)
+    getgenv().abring = true
     repeat task.wait() getrootpart.CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,-4)
     until getgenv().abring == false
+    end,
+    [":unbring"] = function()
+    getgenv().abring = false
     end,
     [":leave"] = function()
         game.shutdown(game)
