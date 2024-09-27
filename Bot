@@ -67,8 +67,8 @@ commandz = {
         Part.CanCollide = true
         getrootpart().CFrame = Part.CFrame * CFrame.new(0, 5, 0)
     end,
-    [":autobring"] = function(speaker)
-    getgenv().abring = true
+    [":autobring"] = function(Value,speaker)
+    getgenv().abring = Value
     repeat task.wait() getrootpart().CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,-4)
     until getgenv().abring == false
     end,
