@@ -8,7 +8,7 @@ local conn = loadstring(game:HttpGet("https://raw.githubusercontent.com/ieufhosi
 
 local SayMessageRequest
 local commandz
-function getmainchar(v)
+local function getmainchar(v)
     if not v then v = lp end
     return v.Character or v.CharacterAdded:Wait()
 end
@@ -67,11 +67,10 @@ commandz = {
         Part.CanCollide = true
         getrootpart().CFrame = Part.CFrame * CFrame.new(0, 5, 0)
     end,
-    [":autobring"] = function(Value,speaker)
-    getgenv().abring = Value
+    [":autobring"] = function(speaker)
+    getgenv().abring = true
     while getgenv().abring do task.wait()
     getrootpart().CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,4)
-    
     end
     end,
     [":unbring"] = function()
