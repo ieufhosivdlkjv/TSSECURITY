@@ -1,3 +1,5 @@
+
+--IDONTCAREABOUTTHISCODENOTMINEJUSTAEDIT
 local function AssignBotData()
 
 if dissty then dissty() end
