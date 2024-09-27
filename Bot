@@ -70,8 +70,8 @@ commandz = {
     [":autobring"] = function(Value,speaker)
     getgenv().abring = Value
     while getgenv().abring do task.wait()
-    repeat task.wait() getrootpart().CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,4)
-    until getgenv().abring == false
+    getrootpart().CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,4)
+    
     end
     end,
     [":unbring"] = function()
