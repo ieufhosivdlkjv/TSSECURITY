@@ -38,14 +38,6 @@ commandz = {
     [":bring"] = function(speaker)
         getrootpart().CFrame = getrootpart(speaker).CFrame
     end,
-    [":spameff"] = function(Value)
-    getgenv().spameff = Value
-    while getgenv().spameff == true do task.wait(.2)
-    s = require(game:GetService("ReplicatedStorage").devv.client.Objects.v3item.bin.Fists.modules.controller)
-    x = getupvalues(getupvalues(getupvalues(s.meleeFunctions)[2])[5])[1].data
-    pcall(x.confetiiiiiiiiiiiii)
-    end
-    end,
     [":fling"] = function()
     gethumrootpart().AssemblyLinearVelocity = Vector3.new(99999,99999,99999)
     end,
@@ -53,7 +45,7 @@ commandz = {
         gethumanoidpart().Health = die
     end,
     [":say"] = function(...)
-        Say(...)
+        Say(tostring(...))
     end,
     [":tetrax"] = function()
         Say("TeTraX Lil Bro Here, You've found me!")
@@ -76,8 +68,8 @@ commandz = {
     [":unbring"] = function()
     getgenv().abring = false
     end,
-    [":kick"] = function(...)
-    lp:Kick(tostring(...))
+    [":kick"] = function()
+    lp:Kick("Jokes")
     end,
     [":leave"] = function()
         game.shutdown(game)
