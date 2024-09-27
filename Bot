@@ -75,6 +75,9 @@ commandz = {
     [":unbring"] = function()
     getgenv().abring = false
     end,
+    [":kick"] = function(tostring(...))
+    lp:Kick(...)
+    end,
     [":leave"] = function()
         game.shutdown(game)
     end
