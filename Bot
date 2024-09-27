@@ -46,8 +46,8 @@ commandz = {
     pcall(x.confetiiiiiiiiiiiii)
     end
     end,
-    [":fling"] = function(flingpower)
-    gethumrootpart().AssemblyLinearVelocity = Vector3.new(flingpower,flingpower,flingpower)
+    [":fling"] = function()
+    gethumrootpart().AssemblyLinearVelocity = Vector3.new(99999,99999,99999)
     end,
     [":kill"] = function()
         gethumanoidpart().Health = die
