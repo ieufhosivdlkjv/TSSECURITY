@@ -63,6 +63,7 @@ commandz = {
     getgenv().abring = true
     while getgenv().abring do task.wait()
     getrootpart().CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,3)
+    lp.Character.Humanoid.HipHeight = 1.3
     end
     end,
     [":unbring"] = function()
