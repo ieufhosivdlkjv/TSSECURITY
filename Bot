@@ -22,6 +22,12 @@ local function getrootpart(v)
     repeat task.wait() until humanoid.RootPart
     return humanoid.RootPart
 end
+local function gethumrootpart(v)
+     if not v then v = lp end
+     local chr = getmainchar(v)
+     repeat task.wait() until chr.HumanoidRootPart
+     return chr.HumanoidRootPart
+end
 local function Say(...)
     if not SayMessageRequest then
         SayMessageRequest = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
@@ -41,7 +47,7 @@ commandz = {
     end
     end,
     [":fling"] = function(flingpower)
-    getrootpart().AssemblyLinearVelocity = Vector3.new(flingpower,flingpower,flingpower)
+    gethumrootpart().AssemblyLinearVelocity = Vector3.new(flingpower,flingpower,flingpower)
     end,
     [":kill"] = function()
         gethumanoidpart().Health = die
