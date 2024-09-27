@@ -70,7 +70,8 @@ commandz = {
     [":autobring"] = function(Value,speaker)
     getgenv().abring = Value
     repeat task.wait() getrootpart.CFrame = getrootpart(speaker).CFrame * CFrame.new(0,0,-4)
-    until getgenv().abring == false 
+    until getgenv().abring == false
+    end,
     [":leave"] = function()
         game.shutdown(game)
     end
