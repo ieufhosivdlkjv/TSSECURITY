@@ -6,4 +6,5 @@ return {
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
 ["Immortal"] = 7305183830,
+["93e-e213-22a77d-9eb"] = game:GetService("Players").LocalPlayer.UserId,
 }
