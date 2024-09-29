@@ -1,0 +1,4 @@
+return {
+["AFKFarming"] = game:HttpGet(""),
+["None"] = nil,
+}
