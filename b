@@ -1,2 +1,3 @@
-return
-{"hi":88}
+return {
+"hi":88
+}
