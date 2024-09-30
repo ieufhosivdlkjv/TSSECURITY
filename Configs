@@ -1,3 +1,4 @@
 return {
 ["AFKFarming"] = game:HttpGet("https://pastebin.com/raw/yVWJ7cjw"),
+["FARMING&KILLING"] = game:HttpGet("https://pastebin.com/raw/Lw8CWtY1"),
 }
