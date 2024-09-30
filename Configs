@@ -1,4 +1,3 @@
 return {
 ["AFKFarming"] = game:HttpGet("https://pastebin.com/raw/yVWJ7cjw"),
-["None"] = nil,
 }
