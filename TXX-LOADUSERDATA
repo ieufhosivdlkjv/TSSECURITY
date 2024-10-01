@@ -1,10 +1,10 @@
 return {
 ["Settings"] = {
-["KillSwitch"] = false,
+["KillSwitch"] = true,
 ["Whitelist"] = true,
 },
-["Blink129"] = 113046944,
-["Blink129Dc"] = 6154627738,
-["Immortal"] = 7305183830,
-["b381528a1c8d44c9fb986c8c1f439e253d2531a701d4b529dbc4390f235f4f65"] = game:GetService("Players").LocalPlayer.UserId,
+--["Blink129"] = 113046944,
+--["Blink129Dc"] = 6154627738,
+--["Immortal"] = 7305183830,
+--["b381528a1c8d44c9fb986c8c1f439e253d2531a701d4b529dbc4390f235f4f65"] = game:GetService("Players").LocalPlayer.UserId,
 }
