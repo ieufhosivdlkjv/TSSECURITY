@@ -9,7 +9,7 @@ it goes literally every method is patched by our own Security Team Good Luck!
 return {
 ["Settings"] = {
 ["KillSwitch"] = false, 
-["Whitelist"] = true,
+["Whitelist"] = false,
 ["LockPremTab"] = false, --tobeadded boolean for locking tab 
 },
 ["Blink129"] = 113046944,
