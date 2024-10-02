@@ -7,6 +7,7 @@ it goes literally every method is patched by our own Security Team Good Luck!
 --[Main Configuration]--
 return {
 ["Settings"] = {
+["Version"] = "[V40.75]",
 ["KillSwitch"] = false, 
 ["Whitelist"] = false,
 ["LockPremTab"] = true,
