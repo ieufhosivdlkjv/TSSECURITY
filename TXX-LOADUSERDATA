@@ -9,7 +9,7 @@ return {
 ["Settings"] = {
 ["KillSwitch"] = false, 
 ["Whitelist"] = false,
-["LockPremTab"] = false,
+["LockPremTab"] = true,
 },
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
