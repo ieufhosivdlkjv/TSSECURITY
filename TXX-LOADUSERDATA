@@ -10,7 +10,7 @@ return {
 ["Settings"] = {
 ["KillSwitch"] = false, 
 ["Whitelist"] = true,
-["LockPremTab"] = nil, --tobeadded boolean for locking tab 
+["LockPremTab"] = false, --tobeadded boolean for locking tab 
 },
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
