@@ -14,7 +14,7 @@ return {
 ["updateCheck"] = checkthing.checkfunc(),
 ["KillSwitch"] = checkthing.killfunc(), 
 ["Whitelist"] = checkthing.allowedonlyfunc(),
-["LockPremTab"] = true,
+["LockPremTab"] = checkthing.lockdownpremtabfunc(),
 },
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
