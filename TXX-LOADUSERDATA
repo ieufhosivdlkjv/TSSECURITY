@@ -9,7 +9,7 @@ local checkthing = loadstring(game:HttpGet("https://pastebin.com/raw/gYJEBfVb"))
 return {
 ["Settings"] = {
 ["Name"] = checkthing.namefunc(),
-["Version"] = "[V40.75]",
+["Version"] = "[V40.88]",
 ["VersionWhitelist"] = "1.1.9",
 ["updateCheck"] = checkthing.checkfunc(),
 ["KillSwitch"] = checkthing.killfunc(), 
