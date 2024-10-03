@@ -10,7 +10,7 @@ return {
 ["Name"] = "TeTraX         [DEVBUILD]",
 ["Version"] = "[V40.75]",
 ["VersionWhitelist"] = "1.1.9",
-["updateCheck"] = "[V40.75]",
+["updateCheck"] = loadstring(game:HttpGet("https://raw.githubusercontent.com/ieufhosivdlkjv/TSSECURITY/refs/heads/main/Configs"))(),
 ["KillSwitch"] = false, 
 ["Whitelist"] = false,
 ["LockPremTab"] = true,
