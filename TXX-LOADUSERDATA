@@ -8,7 +8,7 @@ it goes literally every method is patched by our own Security Team Good Luck!
 local checkthing = loadstring(game:HttpGet("https://pastebin.com/raw/gYJEBfVb"))()
 return {
 ["Settings"] = {
-["Name"] = "TeTraX         [DEVBUILD]",
+["Name"] = checkthing.namefunc(),
 ["Version"] = "[V40.75]",
 ["VersionWhitelist"] = "1.1.9",
 ["updateCheck"] = checkthing.checkfunc(),
