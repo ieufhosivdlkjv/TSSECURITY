@@ -10,6 +10,7 @@ return {
 ["Name"] = "TeTraX         [DEVBUILD]",
 ["Version"] = "[V40.75]",
 ["VersionWhitelist"] = "1.1.9",
+["updateCheck"] = "[V40.75]"
 ["KillSwitch"] = false, 
 ["Whitelist"] = false,
 ["LockPremTab"] = true,
