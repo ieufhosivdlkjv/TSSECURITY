@@ -7,7 +7,7 @@ it goes literally every method is patched by our own Security Team Good Luck!
 --[Main Configuration]--
 return {
 ["Settings"] = {
-["Name"] = "TeTraX         [LIVEUPDATE]",
+["Name"] = "TeTraX         [DEVBUILD]",
 ["Version"] = "[V40.75]",
 ["VersionWhitelist"] = "1.1.9",
 ["KillSwitch"] = false, 
