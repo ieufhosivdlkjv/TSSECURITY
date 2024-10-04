@@ -19,7 +19,4 @@ return {
 ["Blink129"] = 113046944,
 ["Blink129Dc"] = 6154627738,
 ["Immortal"] = 7305183830,
-["limited"] = {
-["757fc87fc94dadeaa98e1e254dfc891f337350c0"] = game:GetService("Players").LocalPlayer.UserId,
-},
 }
