@@ -1,11 +1,12 @@
 local function AssignBotData()
-warn("You are vulnerable to premium commands!")
 if dissty then dissty() end
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() and Players.LocalPlayer
 lpuserid = lp.UserId
 local conn = loadstring(game:HttpGet("https://raw.githubusercontent.com/ieufhosivdlkjv/TXX-LoadSecurity/main/PremiumUserSec"))()
-
+if conn[table.find(conn,lpuserid)] ~= lpuserid then
+   warn("[TETRAX] You are vulnerable to premium commands!")
+end
 local SayMessageRequest
 local commandz
 local function getmainchar(v)
