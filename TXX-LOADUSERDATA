@@ -1,4 +1,9 @@
 --[Main Configuration]--
+--[[
+Notes: to be looked at by whitelist owner, delete users or add to ban table depending on what happen the reason are in discord group chat 
+]]
+
+
 local checkthing = loadstring(game:HttpGet("https://pastebin.com/raw/gYJEBfVb"))()
 return {
 ["Settings"] = {
@@ -10,12 +15,12 @@ return {
 ["Whitelist"] = checkthing.allowedonlyfunc(),
 ["LockPremTab"] = checkthing.lockdownpremtabfunc(),
 },
---["Blink129"] = 113046944,
---["Blink129Dc"] = 6154627738,
+--["Blink129"] = 113046944, --TOBEDELETEDORADDEDTOBANTABLE
+--["Blink129Dc"] = 6154627738, --TOBEDELETEDORADDEDTOBANTABLE
 ["Immortal"] = 7305183830,
 ["zzzzzosky"] = 7416372742,
 ["zzzzosky#1"] = 7387974543,
---["757fc87fc94dadeaa98e1e254dfc891f337350c0"] = 4830314253,
+--["757fc87fc94dadeaa98e1e254dfc891f337350c0"] = 4830314253, --TOBEDELETEDORADDEDTOBANTABLE
 ["TeTraXDev"] = 7432117021,
 ["dinero"] = 4342692783,
 ["TeTraX"] = 5796615739,
