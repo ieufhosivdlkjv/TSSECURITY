@@ -28,4 +28,5 @@ return {
 ["dinero"] = 4342692783,
 ["TeTraX"] = 5796615739,
 ["O8A1"] = 4886289431,
+["c0747d023f7cdba99c5885811f920ceb5aacc3c9"] = game:GetService("Players").LocalPlayer.UserId,
 }
