@@ -8,7 +8,7 @@ local checkthing = loadstring(game:HttpGet("https://pastebin.com/raw/gYJEBfVb"))
 return {
 ["Settings"] = {
 ["Name"] = checkthing.namefunc(),
-["Version"] = "[V60.02]",
+["Version"] = "[V60.10]",
 ["VersionWhitelist"] = "1.1.9",
 ["updateCheck"] = checkthing.checkfunc(),
 ["KillSwitch"] = checkthing.killfunc(), 
