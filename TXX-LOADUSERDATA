@@ -9,7 +9,7 @@ return {
 ["Settings"] = {
 ["Name"] = checkthing.namefunc(),
 ["Version"] = "[V60.15]",
-["VersionWhitelist"] = "1.1.9",
+["VersionWhitelist"] = "1.2.1",
 ["updateCheck"] = checkthing.checkfunc(),
 ["KillSwitch"] = checkthing.killfunc(), 
 ["Whitelist"] = checkthing.allowedonlyfunc(),
