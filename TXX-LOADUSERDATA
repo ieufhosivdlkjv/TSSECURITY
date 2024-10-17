@@ -15,6 +15,9 @@ return {
 ["Whitelist"] = checkthing.allowedonlyfunc(),
 ["LockPremTab"] = checkthing.lockdownpremtabfunc(),
 },
+["keyhandler"] = {
+"111",
+},
 --["Blink129"] = 113046944, --TOBEDELETEDORADDEDTOBANTABLE
 --["Blink129Dc"] = 6154627738, --TOBEDELETEDORADDEDTOBANTABLE
 ["Immortal"] = 7305183830,
