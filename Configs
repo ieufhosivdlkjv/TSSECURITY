@@ -1,4 +1,5 @@
 return {
 ["AFKFarming"] = game:HttpGet("https://pastebin.com/raw/yVWJ7cjw"),
 ["FARMING&KILLING"] = game:HttpGet("https://pastebin.com/raw/Lw8CWtY1"),
+["ToxicMode"] = game:HttpGet("https://pastebin.com/raw/G7fQFD4S"),
 }
